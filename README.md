@@ -9,9 +9,10 @@ This repository only holds the installers. Get the newest one from
 
 - **Windows:** download `BlockProg_<version>_x64-setup.exe` and run it. The installer isn't signed, so Windows may
   say "Windows protected your PC": choose **More info**, then **Run anyway**.
-- **macOS** (Apple silicon and Intel): download the `.dmg`, open it and drag BlockProg to Applications. The app isn't
-  signed by Apple, so the first time macOS refuses to open it: go to **System Settings › Privacy & Security** and
-  choose **Open Anyway** next to BlockProg.
+- **macOS:** download the `.dmg` (`aarch64` is for Macs with Apple silicon, `x64` for Intel ones), open it and drag
+  BlockProg to Applications. The app isn't signed by Apple, so the first time macOS refuses to open it: go to
+  **System Settings › Privacy & Security** and choose **Open Anyway** next to BlockProg. If macOS says BlockProg "is
+  damaged", run this once in Terminal: `xattr -dr com.apple.quarantine /Applications/BlockProg.app`
 
 ## Updates
 
